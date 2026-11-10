@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-SG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bot Demo — Lashdou WhatsApp Concierge | Tiyan Digital</title>
+<meta name="description" content="Try Lashdou's WhatsApp booking flow as a client: pick a service, tap a slot, get confirmed. Three sample scenarios — new booking, rescheduling, no-show recovery.">
+<meta property="og:title" content="Lashdou WhatsApp Concierge — Live Demo">
+<meta property="og:description" content="Click through the booking flow Lashdou's clients would use on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;600;700&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%230F5257'/><text x='50' y='68' font-size='58' text-anchor='middle' fill='white' font-family='Georgia' font-style='italic'>L</text></svg>">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar"><b>Tiyan Digital</b> × <span data-biz>Lashdou</span> — Proposal · 66 East Coast Road, Singapore</div>
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="index.html"><span class="mark">L</span><span><span class="name" data-biz>Lashdou</span><span class="sub">East Coast Atelier</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">MENU</button>
+    <nav class="main" id="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="bot-demo.html" aria-current="page">Bot Demo</a>
+      <a href="servicios.html">Services</a>
+      <a href="como-funciona.html">How It Works</a>
+      <a href="precios.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <a class="btn nav-cta" href="bot-demo.html">Try the demo</a>
+  </div>
+</header>
+
+<main id="main">
+  <section>
+    <div class="wrap">
+      <div class="demo-layout">
+        <div class="demo-copy">
+          <p class="kicker">Interactive concierge simulation · Live sandbox</p>
+          <h1 style="margin:16px 0">Experience <span data-biz>Lashdou</span>'s WhatsApp flow <em>as a client.</em></h1>
+          <p class="lede">Tap through the live prototype below to see how <span data-biz>Lashdou</span> clients reserve a YUMI Lash Lift, choose a time slot and get confirmed — all inside WhatsApp.</p>
+          <div class="scenarios" role="group" aria-label="Choose a scenario" style="margin-top:28px">
+            <button class="scenario-btn" type="button" data-scenario="A" aria-pressed="true">Scenario A · New booking</button>
+            <button class="scenario-btn" type="button" data-scenario="B" aria-pressed="false">Scenario B · Rescheduling</button>
+            <button class="scenario-btn" type="button" data-scenario="C" aria-pressed="false">Scenario C · No-show recovery</button>
+          </div>
+          <p style="font-size:14.5px;color:var(--ink-60)">Tap the buttons inside the phone to advance the flow. Every conversation here is scripted — a sample of how the real concierge would speak.</p>
+          <p style="margin-top:14px"><button class="btn ghost" type="button" data-demo-reset>Reset demo</button></p>
+        </div>
+        <div>
+          <div class="phone">
+            <div class="phone-inner">
+              <div class="phone-head">
+                <span class="avatar">L</span>
+                <span class="who"><b><span data-biz>Lashdou</span> Atelier — East Coast</b><span>+65 8979 6656 · Verified business</span></span>
+                <span class="dot" aria-hidden="true"></span>
+              </div>
+              <div class="chat" data-demo-chat aria-live="polite"></div>
+              <div class="chat-input"><span>Tap options above to simulate…</span><span class="send" aria-hidden="true">➤</span></div>
+              <span class="sample-tag">Sample conversation · Scripted demo</span>
+            </div>
+          </div>
+          <p style="text-align:center;font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60);margin-top:14px">Real-time simulation of client interaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEHIND THE SCENES -->
+  <section class="blush-band" style="margin:0 16px;border-radius:22px">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Engineering architecture — Tiyan Digital integration stack</p>
+        <h2>Behind the scenes: what the bot does for <span data-biz>Lashdou</span></h2>
+        <p class="lede">While clients experience effortless conversation on WhatsApp, the engine runs the synchronisation underneath.</p>
+      </div>
+      <div class="feature-list">
+        <div class="f"><span class="n">01</span><div><h3>Instant slot locking</h3><p>Direct synchronisation with your existing Google Calendar or Acuity diary. Once a client selects a slot, it is held — no double-bookings, no manual diary checks.</p></div></div>
+        <div class="f"><span class="n">02</span><div><h3>Total staff override</h3><p>Front-desk staff can jump into any WhatsApp conversation from WhatsApp Web or their phone. The bot yields instantly and hands over gracefully — a human co-pilot, not a wall.</p></div></div>
+        <div class="f"><span class="n">03</span><div><h3>24-hour &amp; day-of reminders</h3><p>Replaces uncomfortable manual phone calls. The bot sends courteous, East Coast-toned reminders, and if a client cancels, it offers the slot to the waitlist right away.</p></div></div>
+        <div class="f"><span class="n">04</span><div><h3>Bespoke aftercare</h3><p>Automatically delivers authentic YUMI Keratin aftercare instructions after treatment, and follows up when the next appointment would naturally be due.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section>
+    <div class="wrap">
+      <div class="grid-2">
+        <div class="card">
+          <p class="kicker">Physical sanctuary</p>
+          <h3 style="margin-top:12px">66 East Coast Road Atelier</h3>
+          <p>Designed for intimate, peaceful beauty appointments. Near Marine Parade MRT station (TE26) — a short walk from Exit 2. The automated concierge handles the booking; the atelier handles the calm.</p>
+          <p style="margin-top:14px;font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-60)">66 East Coast Road, #03-17, Singapore 428778 · Mon–Sun 11:00–20:00</p>
+        </div>
+        <div class="card" style="background:var(--teal);color:#fff;border-color:var(--teal)">
+          <p class="kicker" style="color:var(--blush)">Turnkey implementation</p>
+          <h3 style="margin-top:12px;color:#fff">Ready to deploy this for your salon?</h3>
+          <p style="color:rgba(255,255,255,.88)">Tiyan Digital sets up your complete WhatsApp booking concierge in 5–7 business days, with custom tone mapping to <span data-biz>Lashdou</span>'s voice.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px">
+            <a class="btn light" href="precios.html">View pricing tiers</a>
+            <a class="btn ghost" style="color:#fff;border-color:rgba(255,255,255,.5)" href="faq.html">Schedule walkthrough</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3><span data-biz>Lashdou</span></h3>
+        <p class="tagline">East Coast Atelier · Bespoke Lash Craft &amp; Seamless WhatsApp Automation</p>
+        <p>Proposal engineered by Tanjir at Tiyan Digital for <span data-biz>Lashdou</span> Salon. Designed to capture boutique reservations — a working demo of a WhatsApp booking concierge, built from <span data-biz>Lashdou</span>'s own services, packages and hours.</p>
+      </div>
+      <div>
+        <p class="fh">Salon coordinates</p>
+        <ul>
+          <li>66 East Coast Road, #03-17,<br>Singapore 428778</li>
+          <li>Mon–Sun 11:00–20:00</li>
+          <li>Near Marine Parade MRT (TE26)</li>
+          <li><a href="mailto:ask@lashdou.com">ask@lashdou.com</a></li>
+          <li><a href="https://wa.me/6589796656">WhatsApp: +65 8979 6656</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="fh">Navigation</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bot-demo.html">Bot Demo</a></li>
+          <li><a href="servicios.html">Services</a></li>
+          <li><a href="como-funciona.html">How It Works</a></li>
+          <li><a href="precios.html">Pricing</a></li>
+          <li><a href="faq.html">FAQ &amp; Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Tiyan Digital &amp; <span data-biz>Lashdou</span>. All rights reserved. Proposal confidential.</span>
+      <span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Proposal</a> · <a href="privacy.html#whatsapp">WhatsApp Compliance</a></span>
+    </div>
+  </div>
+</footer>
+
+<nav class="tabbar" aria-label="Mobile">
+  <a href="index.html">Overview</a>
+  <a href="bot-demo.html" aria-current="page">Concierge</a>
+  <a href="servicios.html">Treatments</a>
+  <a href="faq.html">Location</a>
+</nav>
+
+<div class="cookie" role="region" aria-label="Cookie notice">
+  <p>We use essential cookies only, so the live WhatsApp reservation simulator renders smoothly. No tracking, no ads.</p>
+  <button class="btn" type="button">Acknowledge</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
